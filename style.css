@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Poppins-Black;
+  src: url(fonts/Poppins-Black.ttf);
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(fonts/Poppins-SemiBold.ttf);
+}
+body {
+  background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%);
+  box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: auto;
+  padding: 30px;
+  margin-left: 2rem;
+  margin-right: 7rem;
+}
+.header > .logo {
+  height: 100%;
+}
+.header > .logo > img {
+  width: auto;
+  height: 80%;
+}
+.header > .social-media > img {
+  color: #fff;
+  margin-left: 10px;
+}
+.container__root {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+.container__root > .container__about {
+  color: #fff;
+  margin-left: 4rem;
+}
+.container__root > .container__about > .autor {
+  font-family: Poppins-Medium;
+  font-size: 20px;
+}
+.container__root > .container__about > .obra {
+  font-family: Poppins-Bold;
+  font-size: 69px;
+}
+.container__root > .container__about > .sobre {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+}
+.container__root > .container__about >.buttons{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.container__root > .container__about >.buttons > button{
+    height: 2.8rem;
+    width: 14rem;
+    transform: skewX(12deg);
+    background-color: #658E76;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.container__root > .container__about >.buttons > button:nth-child(2){
+    border: 2px solid #658E76;
+    background-color: transparent;
+}
+.container__root > .container__ilustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__root > .container__ilustration > img {
+  width: 80%;
+  height: auto;
+  animation-name: flutuar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes flutuar {
+    from{
+        opacity: 50%;
+        transform: translateY(50px);
+        
+    }
+    to{
+        opacity: 100%;
+        transform: translateY();
+    }
+}
