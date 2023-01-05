@@ -122,3 +122,47 @@ body {
         transform: translateY();
     }
 }
+@keyframes flutuar-mobile{
+  from{
+      opacity: 50%;
+      transform: translateY(0px);
+      
+  }
+  to{
+      opacity: 100%;
+      transform: translateY(-20px);
+  }
+}
+@media only screen and ( max-width: 915px) {
+  .container__root{
+    flex-direction: column-reverse;
+    height: 85vh;
+  }
+  .container__root > .container__ilustration > img {
+    width: 50%;
+    height: auto;
+    animation-name: flutuar-mobile;  
+  }
+.container__root > .container__about >.buttons > button:nth-child(2){
+    display: none;
+}
+.container__root > .container__about > .obra {
+  font-size: 55px;
+}
+.header{
+  margin-right: 5%;
+}
+.header > .logo > img {
+  width: auto;
+  height: 50%;
+}
+.header > .social-media > svg {
+  color: #fff;
+  margin-left: 10px;
+  height: 4vh;
+  width: auto;
+}
+.container__root > .container__ilustration{
+  height: 20%;
+}
+}
