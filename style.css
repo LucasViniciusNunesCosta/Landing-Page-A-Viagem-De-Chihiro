@@ -44,10 +44,13 @@ body {
   height: 80%;
 }
 .header > .social-media > svg {
-  color: #fff;
+  fill: #fff;
   margin-left: 10px;
   height: 5vh;
   width: auto;
+}
+.header > .social-media > svg:hover{
+  fill: #a3a3a3;
 }
 .container__root {
   display: flex;
@@ -79,7 +82,7 @@ body {
     display: flex;
     gap: 1rem;
 }
-.container__root > .container__about >.buttons > button{
+.container__root > .container__about >.buttons > a{
     height: 2.8rem;
     width: 14rem;
     transform: skewX(12deg);
@@ -87,14 +90,15 @@ body {
     border: none;
     color: #fff;
     font-size: 1rem;
-    padding: 1rem;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+    font-family: Poppins-Regular;
 }
-.container__root > .container__about >.buttons > button:nth-child(2){
+.container__root > .container__about >.buttons > a:nth-child(2){
     border: 2px solid #658E76;
     background-color: transparent;
 }
